@@ -1,0 +1,237 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f9f8f6, #e9e8e5);
+    color: #2e2e2e;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(44, 62, 80, 0.15);
+    color: #2c3e50;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.1);
+    margin-bottom: 5rem;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.stack-title {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.stack-icons {
+    text-align: left;
+}
+
+.crm img {
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.marketplaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.marketplaces img {
+    width: 220px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Responsivo: adapta as imagens em telas pequenas */
+@media (max-width: 600px) {
+    .marketplaces img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+.marketplaces img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.3);
+}
+
+.stack-icons,
+.crm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.07);
+}
+
+.crm img {
+    width: 220px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+    .crm img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        object-fit: cover;
+    }
+}
+
+.crm img {
+    width: 200px;
+    height: 120px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.experience {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.07);
+}
+
+ul {
+    padding-left: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(44, 62, 80, 0.15);
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #6a11cb;
+}
+
+@media (max-width: 600px) {
+    .marketplaces img,
+    .stack-icons img,
+    .crm img {
+        height: 40px;
+    }
+}
+
+.profile {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f9f8f6;
+    box-shadow: 0 0 15px rgba(44, 62, 80, 0.2);
+    margin-bottom: 1rem;
+}
+
+.profile-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.btn-curriculo {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #2c3e50;
+    color: #f9f8f6;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.25);
+}
+
+.btn-curriculo:hover {
+    background-color: #2e7d32;
+    box-shadow: 0 2px 5px #2e7d32;
+    color: #f9f8f6;
+}
+
+.contact {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 10rem;
+    text-align: left;
+    color: #444;
+}
