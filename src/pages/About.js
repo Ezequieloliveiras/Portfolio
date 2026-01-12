@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactGA from 'react-ga'
 import { Icon } from '@iconify/react'
 import hardSkillsIcons from '../data/hardSkillsIcons'
-import image from '../assets/portfolio-img.jpg'
+//import image from '../assets/portfolio-img.jpg'
 
 import Header from '../components/Header'
 import SocialMedia from '../components/SocialMedia'
@@ -61,7 +61,7 @@ export default class About extends Component {
               </p>
               </section>
               <div className="about-image">
-            <img className="about-img" src={image} alt="profile" /> 
+            {/* <img className="about-img" src={image} alt="profile" />  */}
           </div>
               <section className="about-skills">
                 <p className="about-skills-p">SKILLS</p>
